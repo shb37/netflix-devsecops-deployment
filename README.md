@@ -170,6 +170,7 @@ kubectl edit svc stable-kube-prometheus-sta-prometheus -n prometheus
 ```
 kubectl edit svc stable-grafana -n prometheus
 ```
+7. Access Grafana. The default credentials are admin:prom-operator
 
 ## Step 9: Deploy ArgoCD on EKS to fetch the manifest files to the cluster
 
