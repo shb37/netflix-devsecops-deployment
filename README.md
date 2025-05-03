@@ -196,7 +196,7 @@ kubectl get svc argocd-server -n argocd -o json
 
 5. Once you get the load balancer hostname details, you can access the ArgoCD dashboard through it.
 
-6. We need to enter the Username and Password for ArgoCD. The username will be admin by default. For the password, we need to run the command below:
+6. We need to enter the Username and Password for ArgoCD. The username will be 'admin' by default. For the password, we need to run the command below:
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
